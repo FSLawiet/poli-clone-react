@@ -1,0 +1,20 @@
+aside {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  grid-area: sidebar;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+aside ul li {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
