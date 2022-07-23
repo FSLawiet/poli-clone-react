@@ -28,6 +28,13 @@ aside ul li {
   padding: 19px 15px 4px 15px;
   text-align: center;
   font-size: 1.2em;
+  transition: transform 500ms ease;
+}
+
+aside ul li:hover {
+  cursor: pointer;
+  background-color: #56687c;
+  color: rgb(254, 94, 120);
 }
 
 aside ul li#menu-avatar {
@@ -50,6 +57,12 @@ aside ul li#menu-avatar {
   border-radius: 50%;
   height: 35px;
   width: 35px;
+
+  transition: transform 500ms ease;
+}
+
+.avatar:hover {
+  background-color: rgba(254, 94, 120, 0.7);
 }
 
 .avatar__letters {

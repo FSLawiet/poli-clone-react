@@ -1,6 +1,8 @@
 import React from "react";
 import { useStateContext } from "../contexts/ContextProvider";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { BsSun, BsMoon, BsMegaphone } from "react-icons/bs";
+import { FaUsers, FaGlobeAmericas } from "react-icons/fa";
+import { IoPeopleCircleOutline } from "react-icons/io5";
 import { RiWechatLine } from "react-icons/ri";
 import "./Navbar.css";
 
@@ -35,10 +37,10 @@ function Navbar() {
           <div className="option">Menu 1</div>
           <ul>
             <li>
-              <div className="option">Opção 1</div>
+              <div className="option submenu">Opção 1</div>
             </li>
             <li>
-              <div className="option">Opção 2</div>
+              <div className="option submenu">Opção 2</div>
             </li>
           </ul>
         </li>
@@ -46,15 +48,21 @@ function Navbar() {
           <div className="option">Menu 1</div>
           <ul>
             <li>
-              <div className="option">Opção 1</div>
+              <div className="option submenu">Opção 1</div>
             </li>
             <li>
-              <div className="option">Opção 2</div>
+              <div className="option submenu">Opção 2</div>
             </li>
           </ul>
         </li>
       </ul>
       <button className="promo">Indique e ganhe!</button>
+      <div id="notifics">
+        <IoPeopleCircleOutline />
+        <FaUsers />
+        <FaGlobeAmericas />
+        <BsMegaphone />
+      </div>
       <div id="dark-mode-toggle">
         <input
           type="checkbox"

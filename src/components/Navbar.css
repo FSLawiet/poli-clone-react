@@ -4,7 +4,7 @@ nav {
   border-bottom: 0.5px solid white;
   grid-area: navbar;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: left;
   padding: 0;
@@ -42,6 +42,12 @@ nav {
   margin: 0 15px;
   text-align: justify;
 }
+#dropdown li .submenu {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: white;
+  cursor: pointer;
+}
 #dropdown ul {
   /* Hidden by default */
   display: none;
@@ -73,6 +79,23 @@ nav {
   border: none;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
+}
+#notifics {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+}
+
+#notifics svg {
+  transition: transform 500ms ease;
+}
+
+#notifics svg:hover {
+  fill: #fe5e78;
+  cursor: pointer;
 }
 #dark-mode-toggle {
   padding: 20px 0 20px 20px;
