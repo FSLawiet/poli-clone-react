@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Poli Clone React",
+  "name": "Clone em React do Polichat",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "https://www.polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-150x150.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "https://polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-300x300.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-300x300.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "300x300"
     }
   ],
   "start_url": ".",

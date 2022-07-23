@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#111" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <link
+      rel="icon"
+      href="https://www.polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-150x150.png"
+      sizes="32x32"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="icon"
+      href="https://polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-300x300.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-300x300.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://polichat.com.br/wp-content/uploads/2021/03/cropped-Favicon_logo_Prancheta-1-300x300.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#006168" />
+    <meta name="description" content="Clone em React do Polichat" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +50,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Poli Clone React</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +65,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $(document).ready(function () {
+        $("#action_menu_btn").click(function () {
+          $(".action_menu").toggle();
+        });
+      });
+    </script>
   </body>
 </html>

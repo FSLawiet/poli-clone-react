@@ -1,20 +1,74 @@
 aside {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20%; /* Set the width of the sidebar */
-  background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   grid-area: sidebar;
+  align-self: center;
+  justify-content: space-between;
+  border-right: 0.5px solid white;
+  border-top: 0.5px solid white;
+  border-collapse: collapse;
+  display: table;
 }
 aside ul {
   list-style: none;
+  margin: 0;
   padding: 0;
-  padding-bottom: 30px;
-  border-bottom: 1px solid white;
 }
+
+aside #sideMenuBottom {
+  border-top: 0.5px solid white;
+  width: 100%;
+  display: table-row;
+  vertical-align: bottom;
+  height: 1px;
+}
+
 aside ul li {
-  background-color: #333;
-  padding: 15px;
+  padding: 19px 15px 4px 15px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+aside ul li#menu-avatar {
+  padding: 10px 3px 0 3px;
+}
+
+.avatar {
+  /* Center the content */
+  display: inline-block;
+  vertical-align: middle;
+
+  /* Used to position the content */
+  position: relative;
+
+  /* Colors */
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+
+  /* Rounded border */
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.avatar__letters {
+  /* Center the content */
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+#versionLabel {
+  font-size: 8px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#versionNumber {
+  font-size: 12px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }

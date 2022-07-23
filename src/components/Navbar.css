@@ -1,16 +1,88 @@
 nav {
-  width: 100%;
-  height: 20px;
-  padding: 20px;
+  /*width: 100%;*/
+  height: 100%;
   border-bottom: 0.5px solid white;
   grid-area: navbar;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: left;
+  padding: 0;
+}
+#logo {
+  padding: 10px 18px;
+  text-align: center;
+  border-right: 0.5px solid white;
 }
 
-.dark-mode-toggle input[type="checkbox"] {
+#path1580 {
+  fill: #006168;
+  stroke-width: 1;
+}
+
+#title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 3px;
+}
+#dropdown {
+  display: flex;
+  list-style-type: none;
+  margin: 0 25px;
+  padding: 0;
+}
+#dropdown li {
+  padding: 0;
+  position: relative;
+  /* Width */
+  width: 200px;
+}
+#dropdown li .option {
+  padding: 8px;
+  margin: 0 15px;
+  text-align: justify;
+}
+#dropdown ul {
+  /* Hidden by default */
+  display: none;
+
+  /* Absolute position */
+  left: 0;
+  position: absolute;
+  top: 100%;
+
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  /* Width */
+  width: 200px;
+}
+/* Change background color of list item when being hovered */
+#dropdown li .option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* Show the direct sub dropdown when hovering the list item */
+#dropdown li:hover > ul {
+  display: block;
+}
+.promo {
+  background-color: rgb(255, 208, 0);
+  font-weight: bolder;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+#dark-mode-toggle {
+  padding: 20px 0 20px 20px;
+}
+
+#dark-mode-toggle input[type="checkbox"] {
   display: none;
 }
-.dark-mode-toggle label {
-  background-color: #999;
+#dark-mode-toggle label {
+  background-color: #56687c;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
@@ -18,9 +90,10 @@ nav {
   transition: all ease-in-out 0.3s;
   width: 50px;
   height: 25px;
+  margin: 0 3px;
 }
-.dark-mode-toggle label::after {
-  background-color: #777;
+#dark-mode-toggle label::after {
+  background-color: #25313f;
   border-radius: 50%;
   content: " ";
   cursor: pointer;
@@ -31,11 +104,11 @@ nav {
   width: 25px;
   height: 25px;
 }
-.dark-mode-toggle input[type="checkbox"]:checked ~ label {
+#dark-mode-toggle input[type="checkbox"]:checked ~ label {
   background-color: #012a42;
 }
-.dark-mode-toggle input[type="checkbox"]:checked ~ label::after {
+#dark-mode-toggle input[type="checkbox"]:checked ~ label::after {
   background-color: #00b06d;
   transform: translateX(25px);
-  box-shadow: 0 0 0 3px #111;
+  box-shadow: 0 0 0 3px #303d4e;
 }
