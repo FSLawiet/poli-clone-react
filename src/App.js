@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import View from "./components/View";
+import Navbar from "./components/navbar/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
+import View from "./components/view/View";
 
 import { useStateContext } from "./contexts/ContextProvider";
 
