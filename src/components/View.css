@@ -17,13 +17,11 @@ section {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .chat__lista {
-  margin-bottom: auto;
-  height: 100%;
-  margin-top: auto;
+/*  height: 100%; */
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -66,6 +64,17 @@ section {
 
 .chat__lista_contatos ul li .active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: none;
+  background-clip: padding-box;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: white;
+  overflow: auto;
 }
 
 .status_cont {
@@ -268,21 +277,22 @@ section {
   -ms-flex-align: stretch;
   align-items: stretch;
   width: 100%;
+  height: 160px;
 }
 
-textarea .msg {
+.msg {
   background-color: rgba(0, 0, 0, 0.3);
   border: 0;
   color: #fff;
-  height: 60px;
+  height: 100%;
   overflow-y: auto;
   display: block;
-  padding: 0.375rem 0.75rem;
+  padding: 10px;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #fff;
+  width: 100%;
   background-clip: padding-box;
-  border-radius: 0.25rem;
+  border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   overflow: auto;
   resize: vertical;
