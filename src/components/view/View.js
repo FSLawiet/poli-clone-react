@@ -18,7 +18,7 @@ function View() {
             <ul>
               <li>
                 <div class="status_cont">
-                  <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" />
+                  <img src="./img/avatar.jpg" alt="Avatar"/>
                   <span class="status"></span>
                 </div>
                 <div class="chat__lista_contatos_info">
@@ -28,7 +28,7 @@ function View() {
               </li>
               <li>
                 <div class="status_cont">
-                  <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" />
+                  <img src="./img/avatar.jpg" alt="Avatar"/>
                   <span class="status offline"></span>
                 </div>
                 <div class="chat__lista_contatos_info">
@@ -42,7 +42,7 @@ function View() {
         <div class="chat">
           <div class="chat__janela_header">
             <div class="status_cont">
-              <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" />
+              <img src="./img/avatar.jpg" alt="Avatar"/>
               <span class="status online"></span>
             </div>
             <div class="status__conversa">
@@ -81,7 +81,7 @@ function View() {
             <div class="enviado">
               <div class="status_cont">
                 <img
-                  src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                  src="./img/avatar.jpg" alt="Avatar"
                   class="chat__avatar"
                 />
               </div>
@@ -97,7 +97,7 @@ function View() {
               </div>
               <div class="status_cont">
                 <img
-                  src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                  src="./img/avatar.jpg" alt="Avatar"
                   class="chat__avatar"
                 />
               </div>

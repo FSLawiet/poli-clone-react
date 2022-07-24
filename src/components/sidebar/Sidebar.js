@@ -11,7 +11,7 @@ import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { MdAttachMoney } from "react-icons/md";
 import { RiWechatLine } from "react-icons/ri";
 import "./Sidebar.css";
-import { useStateContext } from "../contexts/ContextProvider";
+import { useStateContext } from "../../contexts/ContextProvider";
 function Sidebar() {
   const { currentMode } = useStateContext();
   return (

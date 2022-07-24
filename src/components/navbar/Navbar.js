@@ -1,5 +1,5 @@
 import React from "react";
-import { useStateContext } from "../contexts/ContextProvider";
+import { useStateContext } from "../../contexts/ContextProvider";
 import { BsSun, BsMoon, BsMegaphone } from "react-icons/bs";
 import { FaUsers, FaGlobeAmericas } from "react-icons/fa";
 import { IoPeopleCircleOutline } from "react-icons/io5";
